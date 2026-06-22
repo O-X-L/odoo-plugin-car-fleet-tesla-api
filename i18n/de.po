@@ -1,0 +1,428 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* oxl_fleet_tesla
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e-20240902\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-04 23:28+0000\n"
+"PO-Revision-Date: 2024-12-04 23:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_interval__10m
+msgid "10min"
+msgstr ""
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_interval__15m
+msgid "15min"
+msgstr ""
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_interval__30m
+msgid "30min"
+msgstr ""
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_interval__5m
+msgid "5min"
+msgstr ""
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_settings
+msgid "<b>Prerequisites:</b>"
+msgstr "<b>Einrichtung:</b>"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_settings
+msgid ""
+"<br/>\n"
+"              Note: For debugging - the API calls are logged to file. (<i>/var/log/odoo/tesla_api_calls.log</i>)"
+msgstr ""
+"<br/>\n"
+"              Notiz: Zur Diagnose werden die API-Aufrufe protokolliert. (<i>/var/log/odoo/tesla_api_calls.log</i>)"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_settings
+msgid ""
+"<br/>\n"
+"              We are <b>NOT LIABLE</b> for possible fees you encounter!<br/>\n"
+"              This said - the addon tries to save on API-requests where technically possible.<br/>\n"
+"              <br/>"
+msgstr ""
+"<br/>\n"
+"              Wir sind <b>NICHT VERANTWORTLICH</b> für eventuelle Gebühren, die Ihnen entstehen!<br/>"
+"              Dies gesagt - das Addon versucht, API-Anfragen zu sparen, wo es technisch möglich ist.<br/>"
+"              <br/>"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_settings
+msgid ""
+"<br/><br/>\n"
+"              <span style=\"color:Orange\"><b>WARNING:</b></span>\n"
+"              The Tesla Fleet-API <b>IS NOT FREE</b>!<br/>\n"
+"              See:"
+msgstr ""
+"<br/><br/>\n"
+"              <span style="color:Orange"><b>WARNUNG:</b></span>"
+"              Die Tesla Flotten-API <b>IST NICHT GRATIS</b>!<br/>"
+"              Siehe:"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_vehicle
+msgid "API"
+msgstr ""
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_api_version
+msgid "API Version"
+msgstr ""
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_region__africa
+msgid "Africa"
+msgstr "Afrika"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_region__america
+msgid "America"
+msgstr ""
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_region__asia
+msgid "Asia (excluding China)"
+msgstr "Asien (ohne China)"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_raw_base
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_vehicle
+msgid "Base Data"
+msgstr "Grundlegende Informationen"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_car_special_type
+msgid "Car Special-Type"
+msgstr "Auto Spezial-Typ"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_car_type
+msgid "Car Type"
+msgstr "Auto Typ"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_car_version
+msgid "Car Version"
+msgstr "Auto Version"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_charge_port_type
+msgid "Charge Port Type"
+msgstr "Ladeanschluss"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_raw_charge_state
+msgid "Charge State"
+msgstr "Ladungszustand"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_vehicle
+msgid "Charger"
+msgstr "Ladegerät"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_vehicle
+msgid "Charger State"
+msgstr "Ladegerät Zustand"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_region__china
+msgid "China"
+msgstr ""
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_settings
+msgid "Choose 'Only Machine-to-Machine' communication"
+msgstr "Die 'Maschine-zu-Maschine' Kommunikation auswählen"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_res_config_settings__tesla_region
+msgid "Choose your region"
+msgstr "Wählen Sie Ihre Region"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_raw_climate_state
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_vehicle
+msgid "Climate State"
+msgstr "Klima Zustand"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model,name:oxl_fleet_tesla.model_res_config_settings
+msgid "Config Settings"
+msgstr "Konfigurationseinstellungen"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_settings
+msgid "Copy the Client-ID and -Secret into the inputs below"
+msgstr "Die Kunden-ID und das Kundengeheimnis in die untenstehenden Felder kopieren"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_settings
+msgid "Create an application:"
+msgstr "Eine Applikation erstellen:"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_interval__day
+msgid "Daily"
+msgstr "Täglich"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_settings
+msgid "Dashboard"
+msgstr ""
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_interval__none
+msgid "Disable"
+msgstr "Deaktivieren"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_settings
+msgid "Docs"
+msgstr "Dokumentation"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_raw_drive_state
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_vehicle
+msgid "Drive State"
+msgstr "Fahrzeugzustand"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_driver_assist
+msgid "Driver Assist"
+msgstr "Fahrassistent"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_api_error
+msgid "Error"
+msgstr "Fehler"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_api_error_at
+msgid "Error Time"
+msgstr "Fehler Zeit"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_region__europe
+msgid "Europe"
+msgstr "Europa"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_limit__8-8
+msgid "Every day between 0800 and 2000"
+msgstr "Täglich zwischen 0800 und 2000"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_limit__9-5
+msgid "Every day between 0900 and 1700"
+msgstr "Täglich zwischen 0900 und 1700"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_exterior_color
+msgid "Exterior Color"
+msgstr ""
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_limit__fr-9-5
+msgid "Friday between 0900 and 1700"
+msgstr "Freitag zwischen 0900 und 1700"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_raw_gui_settings
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_vehicle
+msgid "GUI Settings"
+msgstr "GUI Einstellungen"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_settings
+msgid "Have a"
+msgstr "Benötigt"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_interval__hour
+msgid "Hourly"
+msgstr "Stündlich"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_vehicle
+msgid "Information"
+msgstr ""
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_locked
+msgid "Is Locked"
+msgstr "Versperrt"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__is_tesla
+msgid "Is Tesla"
+msgstr ""
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_region__middle_east
+msgid "Middle East"
+msgstr "Mittlerer Osten"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_limit__mo-9-5
+msgid "Monday between 0900 and 1700"
+msgstr "Montag zwischen 0900 und 1700"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_limit__mo-sa-9-5
+msgid "Monday to Saturday between 0900 and 1700"
+msgstr "Montag bis Samstag zwischen 0900 und 1700"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_limit__none
+msgid "No Limit"
+msgstr "Kein Limit"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_option_codes
+msgid "Option Codes"
+msgstr "Optionscodes"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_options
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_vehicle
+msgid "Options"
+msgstr "Optionen"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_vehicle
+msgid "State"
+msgstr "Status"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_supercharging_enabled
+msgid "Supercharging Enabled"
+msgstr "Supercharging aktiv"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_supercharger_payment_needed
+msgid "Supercharging Payment Needed"
+msgstr "Zahlung für Supercharging nötig"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_vehicle
+msgid "Tesla"
+msgstr ""
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_res_config_settings__tesla_client_id
+msgid "Tesla API Client-ID"
+msgstr "Tesla API Kunden-ID"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_res_config_settings__tesla_poll_interval
+msgid "Tesla API Poll-Interval"
+msgstr "Tesla API Abfrage-Intervall"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_res_config_settings__tesla_poll_limit
+msgid "Tesla API Poll-Limit"
+msgstr "Tesla API Abfrage-Limit"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_res_config_settings__tesla_client_secret
+msgid "Tesla API Secret"
+msgstr "Tesla API Geheimnis"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_settings
+msgid "Tesla Fleet-API"
+msgstr ""
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_settings
+msgid "Tesla Fleet-API Billing"
+msgstr "Tesla Flotten-API Gebühren"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_vehicle
+msgid "Tesla Raw Data"
+msgstr "Tesla Rohe Daten"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_settings
+msgid "Tesla-Business account"
+msgstr "Tesla-Business Konto"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_limit__th-9-5
+msgid "Thursday between 0900 and 1700"
+msgstr "Donnerstag zwischen 0900 und 1700"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_limit__tu-9-5
+msgid "Tuesday between 0900 and 1700"
+msgstr "Dienstag zwischen 0900 und 1700"
+
+#. module: oxl_fleet_tesla
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_vehicle
+msgid "Update Now"
+msgstr "Jetzt Aktualisieren"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_api_updated_at
+msgid "Update Time"
+msgstr "Aktualisierungszeit"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_user_present
+msgid "User is Present"
+msgstr "Nutzer ist anwesend"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model,name:oxl_fleet_tesla.model_fleet_vehicle
+msgid "Vehicle"
+msgstr "Fahrzeug"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_raw_vehicle_config
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_vehicle
+msgid "Vehicle Config"
+msgstr "Fahrzeug Konfiguration"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields,field_description:oxl_fleet_tesla.field_fleet_vehicle__tesla_raw_vehicle_state
+#: model_terms:ir.ui.view,arch_db:oxl_fleet_tesla.view_fleet_tesla_vehicle
+msgid "Vehicle State"
+msgstr "Fahrzeug Status"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_limit__we-9-5
+msgid "Wednesday between 0900 and 1700"
+msgstr "Mittwoch zwischen 0900 und 1700"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_limit__mo-fr-9-5
+msgid "Weekdays between 0900 and 1700"
+msgstr "Wochentags zwischen 0900 und 1700"
+
+#. module: oxl_fleet_tesla
+#: model:ir.model.fields.selection,name:oxl_fleet_tesla.selection__res_config_settings__tesla_poll_interval__week
+msgid "Weekly"
+msgstr "Wöchentlich"

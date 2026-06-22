@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="view_fleet_tesla_settings" model="ir.ui.view">
+      <field name="name">res.config.settings.view.form.inherit.hr.fleet.tesla</field>
+      <field name="model">res.config.settings</field>
+      <field name="inherit_id" ref="fleet.res_config_settings_view_form"></field>
+      <field name="arch" type="xml">
+        <xpath expr="//block[@id='end_contract_setting']" position="after">
+          <block title="Tesla Fleet-API" id="tesla_api_settings">
+            <div>
+              <b>Prerequisites:</b>
+              <ol>
+                <li>Have a <a href="https://accounts.tesla.com/business/get-started">Tesla-Business account</a></li>
+                <li>
+                    Create an application:
+                    <a href="https://www.tesla.com/developer-docs">Docs</a>,
+                    <a href="https://developer.tesla.com/dashboard">Dashboard</a>
+                </li>
+                <li>Choose 'Only Machine-to-Machine' communication</li>
+                <li>Copy the Client-ID and -Secret into the inputs below</li>
+              </ol>
+            </div>
+            <setting id="tesla_client_id">
+              <field name="tesla_client_id"/>
+            </setting>
+            <setting id="tesla_client_secret">
+              <field name="tesla_client_secret"/>
+            </setting>
+            <setting id="tesla_region">
+              <field name="tesla_region"/>
+            </setting>
+            <group col="1">
+              <button type="object" name="tesla_api_reauthenticate" string="Re-Authenticate"/>
+              <button type="object" name="tesla_api_update_all" string="Update All"/>
+              <button string="API Protocol" name="%(fleet_tesla_protocol_action)d" type="action"/>
+            </group>
+            <hr/>
+            <div>
+              <br/><br/>
+              <span style="color:Orange"><b>WARNING:</b></span>
+              The Tesla Fleet-API <b>IS NOT FREE</b>!<br/>
+              See: <b><a href="https://developer.tesla.com/docs/fleet-api/getting-started/billing-and-limits">Tesla Fleet-API Billing</a></b><br/>
+              We are <b>NOT LIABLE</b> for possible fees you encounter!<br/>
+              This said - the addon tries to save on API-requests where technically possible.<br/>
+              <br/>
+            </div>
+            <setting id="tesla_poll_interval">
+              <field name="tesla_poll_interval"/>
+            </setting>
+            <setting id="tesla_poll_limit">
+              <field name="tesla_poll_limit"/>
+            </setting>
+            <setting id="tesla_offline_retry_interval">
+              <field name="tesla_offline_retry_interval"/>
+            </setting>
+            <setting id="tesla_vehicle_cache_time">
+              <field name="tesla_vehicle_cache_time"/>
+            </setting>
+            <setting id="tesla_show_raw_tab">
+              <field name="tesla_show_raw_tab"/>
+            </setting>
+            <setting id="tesla_odometer_km">
+              <field name="tesla_odometer_km"/>
+            </setting>
+            <hr/>
+            <b>Data to sync:</b>
+            <br/>
+            <setting id="tesla_pull_options">
+              <field name="tesla_pull_options"/>
+            </setting>
+            <setting id="tesla_pull_vehicle_data">
+              <field name="tesla_pull_vehicle_data"/>
+            </setting>
+            <setting id="tesla_pull_drivers">
+              <field name="tesla_pull_drivers"/>
+            </setting>
+            <setting id="tesla_pull_alerts">
+              <field name="tesla_pull_alerts"/>
+            </setting>
+            <setting id="tesla_pull_service">
+              <field name="tesla_pull_service"/>
+            </setting>
+          </block>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

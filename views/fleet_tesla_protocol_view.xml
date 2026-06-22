@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id='fleet_tesla_protocol_view_tree' model='ir.ui.view'>
+        <field name="name">oxl.fleet.tesla.protocol.tree</field>
+        <field name="model">oxl.fleet.tesla.protocol</field>
+        <field name="arch" type="xml">
+            <tree string="Tesla API Request Logs">
+                <field name="create_date" readonly="true"/>
+                <field name="endpoint" readonly="true"/>
+                <field name="failed" readonly="true"/>
+                <field name="status_code" readonly="true"/>
+                <field name="error" readonly="true"/>
+                <field name="url" readonly="true"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="fleet_tesla_protocol_action" model="ir.actions.act_window">
+        <field name="name">Tesla API Protocol</field>
+        <field name="res_model">oxl.fleet.tesla.protocol</field>
+        <field name="view_mode">list</field>
+        <field name="target">inline</field>
+    </record>
+
+    <menuitem id="fleet_tesla_protocol_menu" name="Tesla API Protocol"
+        parent="fleet.fleet_configuration" sequence="100" action="fleet_tesla_protocol_action"
+        groups="base.group_system"/>
+  </data>
+</odoo>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="view_fleet_tesla_vehicle" model="ir.ui.view">
+      <field name="name">fleet.vehicle.inherit</field>
+      <field name="model">fleet.vehicle</field>
+      <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"></field>
+      <field name="arch" type="xml">
+        <xpath expr="//page[@name='page_model']" position="after">
+          <field name="is_tesla" invisible="1"/>
+          <field name="tesla_show_vehicle_data" invisible="1"/>
+          <field name="tesla_show_vehicle_data_raw" invisible="1"/>
+          <field name="tesla_option_codes" invisible="1"/>
+          <field name="tesla_drivers" invisible="1"/>
+          <page name="page_tesla" string="Tesla" invisible="not is_tesla">
+            <group col="2">
+              <group string="Information" invisible="not tesla_show_vehicle_data">
+                <field name="tesla_display_name" readonly="true"/>
+                <field name="tesla_car_type" readonly="true"/>
+                <field name="tesla_car_special_type" readonly="true"/>
+                <field name="tesla_exterior_color" readonly="true"/>
+                <field name="tesla_driver_assist" readonly="true"/>
+              </group>
+              <group string="State">
+                <field name="odometer" readonly="true" invisible="not tesla_show_vehicle_data"/>
+                <field name="tesla_locked" readonly="true" invisible="not tesla_show_vehicle_data"/>
+                <field name="tesla_user_present" readonly="true" invisible="not tesla_show_vehicle_data"/>
+                <field name="tesla_car_version" readonly="true"/>
+                <field name="tesla_api_version" readonly="true"/>
+              </group>
+              <group string="API">
+                <field name="tesla_api_updated_at" readonly="true" style="color:Green"/>
+                <field name="tesla_api_error_at" readonly="true" invisible="tesla_api_error == ''" style="color:Orange"/>
+                <field name="tesla_api_error" readonly="true" invisible="tesla_api_error == ''" style="color:Orange"/>
+                <button type="object" name="tesla_api_update_single" string="Update Now"/>
+              </group>
+              <group string="Charger" invisible="not tesla_show_vehicle_data">
+                <field name="tesla_charge_port_type" readonly="true"/>
+                <field name="tesla_supercharger_payment_needed" readonly="true"/>
+                <field name="tesla_supercharging_enabled" readonly="true"/>
+              </group>
+            </group>
+            <group col="1" invisible="not tesla_option_codes">
+              <group string="Options">
+                <field name="tesla_options" readonly="true" widget="html"/>
+              </group>
+            </group>
+            <group invisible="not tesla_drivers">
+              <group string="Drivers">
+                <field name="tesla_drivers_list" readonly="true" widget="html"/>
+              </group>
+            </group>
+            <group invisible="tesla_service_status != ''">
+              <group string="Service Status">
+                <field name="tesla_service_status" readonly="true"/>
+                <field name="tesla_service_etc" readonly="true"/>
+                <field name="tesla_service_nr" readonly="true"/>
+                <field name="tesla_service_status_id" readonly="true"/>
+              </group>
+            </group>
+            <group col="1" invisible="tesla_alert_list == ''">
+              <group string="Alerts">
+                <field name="tesla_alert_list" readonly="true" widget="html"/>
+              </group>
+            </group>
+          </page>
+          <page name="page_tesla_raw" string="Tesla Raw Data" invisible="not is_tesla or not tesla_show_vehicle_data_raw">
+            <group col="1">
+              <group string="Base Data">
+                  <field name="tesla_raw_base" readonly="true"/>
+              </group>
+              <group string="Vehicle State">
+                  <field name="tesla_raw_vehicle_state" readonly="true"/>
+              </group>
+              <group string="Vehicle Config">
+                  <field name="tesla_raw_vehicle_config" readonly="true"/>
+              </group>
+              <group string="Drive State">
+                  <field name="tesla_raw_drive_state" readonly="true"/>
+              </group>
+              <group string="Charger State">
+                  <field name="tesla_raw_charge_state" readonly="true"/>
+              </group>
+              <group string="Climate State">
+                  <field name="tesla_raw_climate_state" readonly="true"/>
+              </group>
+              <group string="GUI Settings">
+                  <field name="tesla_raw_gui_settings" readonly="true"/>
+              </group>
+            </group>
+          </page>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>
