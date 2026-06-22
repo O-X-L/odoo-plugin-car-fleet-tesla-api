@@ -59,7 +59,7 @@
 
   Choose & click on `Upgrade`
 
-  If any error occurs at the upgrade - there might be an incompatibility with your odoo version or another plugin. You have to troubleshoot it.
+  If any error occurs at the upgrade - there might be an incompatibility with your odoo version or another plugin. You have to troubleshoot it. Maybe also open [an issue](https://github.com/O-X-L/odoo-plugin-car-fleet-tesla-api/issues) so a fix can be added to this repo.
 
 * Go to the Odoo-fleet-management settings
 

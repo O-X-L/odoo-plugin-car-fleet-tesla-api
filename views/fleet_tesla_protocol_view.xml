@@ -5,14 +5,14 @@
         <field name="name">oxl.fleet.tesla.protocol.tree</field>
         <field name="model">oxl.fleet.tesla.protocol</field>
         <field name="arch" type="xml">
-            <tree string="Tesla API Request Logs">
+            <list string="Tesla API Request Logs">
                 <field name="create_date" readonly="true"/>
                 <field name="endpoint" readonly="true"/>
                 <field name="failed" readonly="true"/>
                 <field name="status_code" readonly="true"/>
                 <field name="error" readonly="true"/>
                 <field name="url" readonly="true"/>
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -20,7 +20,7 @@
         <field name="name">Tesla API Protocol</field>
         <field name="res_model">oxl.fleet.tesla.protocol</field>
         <field name="view_mode">list</field>
-        <field name="target">inline</field>
+        <field name="target">current</field>
     </record>
 
     <menuitem id="fleet_tesla_protocol_menu" name="Tesla API Protocol"
